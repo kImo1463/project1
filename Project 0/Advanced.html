@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Advanced Search</title>
+  <style>
+    /* CSS styling for the advanced search page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      margin: 30px;
+      max-width: 600px;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    input[type="text"], select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    
+    .form-row {
+      display: flex;
+    }
+    
+    .form-row label {
+      flex: 0 0 150px;
+    }
+    
+    .form-row input,
+    .form-row select {
+      flex: 1;
+    }
+    
+    .logo-container {
+      padding: 10px;
+    }
+    #Adv-search{
+      color: white;
+      background-color: blue;
+    }
+    .logo {
+      height: 40px;
+    }
+    #return-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #4285f4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+    }
+    #return-button:hover {
+            background-color: #3367d6;
+        }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+  </div>
+
+  <div class="container">
+    <h1 style="background-color: blue;color: white;">Google Advanced Search</h1>
+    <form action="https://www.google.com/search" method="GET">
+      <div class="form-row">
+        <label for="keywords">All these words:</label>
+        <input type="text" id="keywords" name="as_q" placeholder="Enter keywords">
+      </div>
+
+      <div class="form-row">
+        <label for="exact-phrase">This exact word or phrase:</label>
+        <input type="text" id="exact-phrase" name="as_epq" placeholder="Enter exact word or phrase">
+      </div>
+      
+      <div class="form-row">
+        <label for="any-words">Any of these words:</label>
+        <input type="text" id="any-words" name="as_oq" placeholder="Enter words">
+      </div>
+      
+      <div class="form-row">
+        <label for="none-words">None of these words:</label>
+        <input type="text" id="none-words" name="as_eq" placeholder="Enter words">
+      </div>
+    
+      <button type="submit">Search</button>
+
+    </form>
+  </div>
+  <button id="return-button" onclick="window.location.href='index.html'">Return to Google</button>
+
+</body>
+</html>

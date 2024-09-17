@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        #search-container {
+            padding: 20px;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        #search-container img {
+            width: 272px;
+            height: 92px;
+        }
+
+        #search-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #search-form input[type="text"] {
+            width: 500px;
+            height: 30px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 20px; /* Rounded edges */
+        }
+
+        #search-form input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #4285f4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #search-form input[type="submit"]:hover {
+            background-color: #3367d6;
+        }
+
+        #return-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #4285f4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #return-button:hover {
+            background-color: #3367d6;
+        }
+
+        #footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            font-size: 12px;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+
+        <form id="search-form" action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" placeholder="Search google" style="border-radius: 20px;">
+            <input type="hidden" name="tbm" value="isch">
+            <br>
+            <input type="submit" value="Search images">
+        </form>
+
+        <button id="return-button" onclick="window.location.href='index.html'">Return to Google</button>
+    </div>
+   
+</body>
+</html>
